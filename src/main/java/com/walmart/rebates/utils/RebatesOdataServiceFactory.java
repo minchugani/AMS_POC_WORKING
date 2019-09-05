@@ -28,7 +28,7 @@ public class RebatesOdataServiceFactory extends ODataJPAServiceFactory{
 	public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
 		ODataJPAContext oDataJPAContext = getODataJPAContext();
 		oDataJPAContext.setEntityManagerFactory(entityManagerFactory);
-//		oDataJPAContext.setJPAEdmExtension(new CustomAnnotationProcessor());
+		oDataJPAContext.setJPAEdmExtension(new RegisterFnImp());
 		oDataJPAContext.setPersistenceUnitName(PUNIT_NAME);
 		return oDataJPAContext;
 	}

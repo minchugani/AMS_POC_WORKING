@@ -38,8 +38,7 @@ public class TR_Header {
 	@Column(name = "\"CalcBasis\"")
 	private String calcBasis;
 
-	@Column(name = "\"PaymentTerms\"")
-	private String paymentTerms;
+	
 
 	public int getTrid() {
 		return trid;
@@ -105,13 +104,7 @@ public class TR_Header {
 		this.calcBasis = calcBasis;
 	}
 
-	public String getPaymentTerms() {
-		return paymentTerms;
-	}
-
-	public void setPaymentTerms(String paymentTerms) {
-		this.paymentTerms = paymentTerms;
-	}
+	
 
 
 }
